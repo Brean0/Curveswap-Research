@@ -3,7 +3,8 @@ Curveswap Stuff, personal use, dont think this shit is investment advice or what
 
 As a primer, Curve Finance is a AMM protocol that allows for more efficient swaps on like-asset pairs, compared to traditional AMMs such as uniswap/sushiswap. This is due to the formula Curve uses to determine the swap price.
 
-https://github.com/BrianOlympus/Curveswap-Stuff/blob/main/curveswap.png
+[<img src="BrianOlympus/Curveswap-Stuff/blob/main/curveswap.png" alt="Alt text" title="Optional title"> ](https://github.com/BrianOlympus/Curveswap-Stuff/blob/main/curveswap.png)
+
 
 The gist of this formula is that it shifts between a constant sum (X + Y = K) and constant product (X * Y = K) formula as the balance of assets leans more heavily towards one asset. In an ideal world, the constant sum allows for perfect swaps (you put in 10 tokens, you get 10 tokens). However, there is finite liquidity (if you have a position of 10 Token A and 10 Token B, you are at most able to swap 10 tokens), and a high risk that the composition of the pool will never be balanced. The A parameter controls how fast the formula switches from a constant sum to a constant product formula. 
 
