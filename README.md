@@ -1,5 +1,4 @@
 # Curveswap-Stuff
-Curveswap Stuff, personal use, dont think this shit is investment advice or whatever 
 
 As a primer, Curve Finance is a AMM protocol that allows for more efficient swaps on like-asset pairs, compared to traditional AMMs such as uniswap/sushiswap. This is due to the formula Curve uses to determine the swap price.
 
