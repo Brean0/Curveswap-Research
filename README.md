@@ -1,4 +1,4 @@
-# Curveswap-Stuff
+# Curveswap-Research
 
 As a primer, Curve Finance is a AMM protocol that allows for more efficient swaps on like-asset pairs, compared to traditional AMMs such as uniswap/sushiswap. This is due to the formula Curve uses to determine the swap price.
 
@@ -13,7 +13,7 @@ In beanstalks case, it does not give assurances of short term price stability, b
 
 The A factor, however, can affect this oscillation heavily. With a high A factor, relatively small deviations cause massive pool imbalances. This makes sense for large stable caps such as USDC, DAI or USDT. They have a need to facilitate large sized trades with low slippage. However, for beanstalk, the high A factor creates inefficiencies seen in the convert and field functions.
 
-The convert is a soft peg stability mechanism, **backed by the willingness of the market** to convert. The attractiveness of Converting comes from the price deviations, rather than the DeltaB sum of pools. As a higher A factor minimizes the price deviations as the pool gets imbalanced, it reduces the .
+The convert is a soft peg stability mechanism, **backed by the willingness of the market** to convert. The attractiveness of Converting comes from the price deviations, rather than the DeltaB sum of pools. As a higher A factor minimizes the price deviations as the pool gets imbalanced, it reduces the arbitrage gained from converting.
 
 For the field, your return is denominated in beans given the weather. However, the lower price the farmer purchases bean to sow, the higher actual return is (e.g buying bean at 0.25 at 1000% weather means an effective weather at 4000%). This means with a high A factor, beanstalk would have to compensate with a higher weather, as given a deltaB the price woudl be higher. This could ultimately result in a longer podline and larger podrate. 
 
